@@ -1,0 +1,106 @@
+.header {
+  
+  &__about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+  }
+  
+  &__city-media {
+    font-size: 13px;
+    text-align: right;
+  }
+}
+
+@media (min-width: 710px) {
+  .header{
+    &__about {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+    }
+    &__left-side {
+      display: flex;
+    }
+    &__logo {
+      padding-right: 20px;
+    }
+    &__location {
+      display: flex;
+      font-size: 14px;
+      line-height: 21px;
+      svg {
+        padding-right: 4px;
+      }
+      &-adress {
+        &-street{
+          color: #868686;
+        }
+      }
+    }
+    &__right-side {
+      display: flex;
+      .header__city-media {
+        display: none;
+      }
+      .header__number {
+        display: flex;
+        align-items: center;
+        margin-right: 35px;
+        img {
+          margin-right: 10px;
+        }
+        }
+    }
+    
+  }
+  .menu {
+    background: #1FA181;
+    &__list {
+      display: flex;
+      gap: 30px;
+      line-height: 24px;
+      &_item {
+        padding: 10px 0;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .header {
+    &__logo {
+      max-width: 62px;
+    }
+    &__location {
+      svg {
+        display: none;
+      }
+      &-adress {
+        display: none;
+      }
+    }
+    &__right-side {
+      display: block;
+      button {
+        display: none;
+      }
+    }
+    &__number {
+      img {
+        display: none;
+      }
+      p {
+        font-weight: 700;
+      }
+    }
+    .menu {
+      display: none;
+    }
+  }
+}

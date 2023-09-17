@@ -1,0 +1,242 @@
+.main {
+  flex: 1 1 auto;
+  .about {
+    background: #F8FBFA;
+    margin-bottom: 100px;
+    
+		&__content {
+      flex: 0 0 100%;
+      display: flex;
+      padding-right: 15px;
+		}
+
+		&__conteiner {
+      max-width: 1170px;
+      padding: 0 15px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+		}
+
+		&__body {
+      
+		}
+
+		&__title {
+      font-size: 36px;
+      font-weight: 700;
+      margin: 0 0 15px 0;
+      text-wrap: balance;
+      line-height: 130%;
+		}
+
+		&__text {
+      line-height: 150%;
+      text-wrap: balance;
+		}
+
+		&__image {
+      
+      & img {
+        max-width: 100%;
+      }
+		}
+  }
+  .check-up {
+    margin-bottom: 40px;
+    &__body{
+      display: flex;
+      
+    }
+    &__content {
+      padding: 9.3% 0 0 11.05%;
+    }
+		&__info {
+      background: url('../images/bg.png');
+      background-size: 100% 100%;
+      z-index: 1;
+      flex: 0 0 50%;
+      &_title {
+        font-size: 38px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      &_subtitle {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+      &_list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 33px;
+        padding-left: 15px;
+      }
+      &_item{
+        position: relative;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          left: -15px;
+          top: 5px;
+          width: 7px;
+          height: 7px;
+          background-color: #1FA181;
+          border-radius: 50%;
+        }
+      }
+      
+      &_price {
+        font-size: 20px;
+        margin-bottom: 26px;
+        span {
+          line-height: 150%;
+          text-decoration-line: line-through;
+          color: #868686;
+          font-size: 16px;
+          padding-left: 15px;
+        }
+      }
+      &_buttons {
+        
+      }
+      &_register {
+        padding: 11px 58px;
+        margin-right: 15px;
+      }
+      &_more {
+        color: #0DBC91;
+        padding: 11px 58px;
+        font-size: 14px;
+        line-height: 150%;
+        border-radius: 50px;
+        border: 1px solid #0DBC91;
+        background-color: transparent
+      }
+		}
+    &_img {
+      
+        & img {
+          max-width: 100%;
+          
+        }
+    }	
+}
+
+}
+@media (min-width: 768px) {
+  .about {
+    display: flex;
+    &__body {
+      width: 50%;
+    }
+  }
+  .about__image {
+    position: relative;
+    flex: 0 0 50%;
+    transform: translate(-100%, 0px);
+    padding: 0 0 28.419%;
+  }
+  .about__image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  .check-up {
+    .check-up__info_item {
+      max-width: 80%;
+    }
+    
+    &__img {
+      position: relative;
+      flex: 0 0 60.7%;
+      padding: 0 0 38.6%;
+      transform: translate(-18%, 0px);
+      
+      & img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        
+      }
+    }
+  }
+}
+//--------------------------------------------
+@media (max-width: 767px) {
+  .about{
+    display: flex;
+    flex-direction: column;
+    &__content{
+      order: 2;
+    }
+    &__image {
+      order: 1;
+      margin-bottom: 35px;
+    }
+  }
+
+  .about__body .about__title {
+    font-size: 26px;
+    
+  }
+  .about__body .about__text {
+    font-size: 14px;
+   padding-bottom: 53px;
+
+  }
+  .check-up__body {
+    flex-direction: column;
+  }
+  .check-up .check-up__info {
+    background-color: #E2F0EF;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    &_title{
+      font-size: 26px;
+    }
+    &_subtitle{
+      font-size: 14px;
+    }
+    &_item{
+      font-size: 14px;
+      
+    }
+    &_buttons{
+      margin-bottom: 42px;
+      
+      
+    }
+    &_register{
+      margin: 0 5px 5px 0;
+    }
+  }
+  .check-up__content{
+    padding: 22px !important;
+  }
+  .check-up__img {
+    order: 1;
+    img{
+      width: 100%;
+    }
+  }
+}
+//--------------------------------------
+@media (max-width: 991px) {
+  .check-up__info_buttons {
+    button{
+      padding: 11px 23px !important;
+    }
+    .check-up__info_register{
+      margin-right: 5px;
+    }
+  }
+}
