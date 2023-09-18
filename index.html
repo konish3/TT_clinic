@@ -13,6 +13,9 @@
         <div class="_container">
           <div class="header__about">
             <div class="header__left-side">
+              <div class="menu__icon">
+                <span></span>
+              </div>
               <img class="header__logo" src="images/logo.svg"></img>
               <div class="header__location">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -47,43 +50,57 @@
         </div>
       </header>
       <main class="main">
-        <section class="about">
-          <div class="about__content">
-            <div class="about__conteiner">
-              <div class="about__body">
-                <h2 class="about__title">Многопрофильная клиника для детей и взрослых</h2>
-                <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-              </div>
-            </div>
+        <div class="main__menu">
+          <div class="_container">
+            <ul class="main__menu_list">
+              <li class="main__menu_item"><a href="">О клинике</a></li>
+              <li class="main__menu_item"><a href="">Услуги</a></li>
+              <li class="main__menu_item"><a href="">Специалисты</a></li>
+              <li class="main__menu_item"><a href="">Цены</a></li>
+              <li class="main__menu_item"><a href="">Контакты</a></li>
+            </ul>
+            <button class="main__menu_button register">Записаться на прием</button>
           </div>
-          <div class="about__image">
-            <img src="images/Photo-1.png" alt="">
-          </div>
-        </section>
-        <section class="check-up">
-          <div class="_container check-up__container">
-            <div class="check-up__body">
-              <div class="check-up__info">
-                <div class="check-up__content">
-                  <h2 class="check-up__info_title">check-up</h2>
-                  <p class="check-up__info_subtitle">для мужчин</p>
-                  <ul class="check-up__info_list">
-                    <li class="check-up__info_item">Гормональный скрининг</li>
-                    <li class="check-up__info_item">Тестостерон</li>
-                    <li class="check-up__info_item">Свободный тестостерон</li>
-                    <li class="check-up__info_item">Глобулин, связывающий половые гормоны</li>
-                  </ul>
-                  <div class="check-up__info_price">Всего 2800₽<span>3500₽</span></div>
-                  <div class="check-up__info_buttons">
-                    <button class="check-up__info_register register">Записаться</button>
-                    <button class="check-up__info_more">Подробнее</button>
-                  </div>
+        </div>
+        <div class="main__block">
+          <section class="about">
+            <div class="about__content">
+              <div class="about__conteiner">
+                <div class="about__body">
+                  <h2 class="about__title">Многопрофильная клиника для детей и взрослых</h2>
+                  <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
                 </div>
               </div>
-              <div class="check-up__img"><img src="images/doctor-working-table.png" alt=""></div>
             </div>
-          </div>
-        </section>
+            <div class="about__image">
+              <img src="images/Photo-1.png" alt="">
+            </div>
+          </section>
+          <section class="check-up">
+            <div class="_container check-up__container">
+              <div class="check-up__body">
+                <div class="check-up__info">
+                  <div class="check-up__content">
+                    <h2 class="check-up__info_title">check-up</h2>
+                    <p class="check-up__info_subtitle">для мужчин</p>
+                    <ul class="check-up__info_list">
+                      <li class="check-up__info_item">Гормональный скрининг</li>
+                      <li class="check-up__info_item">Тестостерон</li>
+                      <li class="check-up__info_item">Свободный тестостерон</li>
+                      <li class="check-up__info_item">Глобулин, связывающий половые гормоны</li>
+                    </ul>
+                    <div class="check-up__info_price">Всего 2800₽<span>3500₽</span></div>
+                    <div class="check-up__info_buttons">
+                      <button class="check-up__info_register register">Записаться</button>
+                      <button class="check-up__info_more">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="check-up__img"><img src="images/doctor-working-table.png" alt=""></div>
+              </div>
+            </div>
+          </section>
+        </div>
       </main>
       <footer class="footer">
         <div class="_container">
@@ -110,5 +127,6 @@
         </div>
       </footer>
   </div>
+  <script src="index.js"></script>
 </body>
 </html>

@@ -6,14 +6,16 @@
     justify-content: space-between;
     padding: 12px 0;
   }
-  
+  &__left-side {
+      display: flex;
+    }
   &__city-media {
     font-size: 13px;
     text-align: right;
   }
 }
 
-@media (min-width: 710px) {
+@media (min-width: 767px) {
   .header{
     &__about {
       display: flex;
@@ -21,9 +23,9 @@
       justify-content: space-between;
       padding: 12px 0;
     }
-    &__left-side {
-      display: flex;
-    }
+    // &__left-side {
+    //   display: flex;
+    // }
     &__logo {
       padding-right: 20px;
     }
@@ -72,8 +74,41 @@
   }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 767px) {
   .header {
+    .menu__icon {
+      display: block;
+      width: 37px;
+      height: 26px;
+      cursor: pointer;
+      position: relative;
+      margin-right: 45px;
+      span {
+        top: 50%;
+        transform: translate(0px, -50%);
+      }
+      &::after,
+      &::before,
+      span {
+        position: absolute;
+        left: 0;
+        height: 17%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #1FA181;
+      }
+      &::after,
+      &::before {
+        content: "";
+      }
+      &::after {
+        bottom: 0;
+      }
+      &::before {
+        top: 0;
+      }
+
+    }
     &__logo {
       max-width: 62px;
     }
