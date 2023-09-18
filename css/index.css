@@ -9,8 +9,6 @@
 *,
 *::before,
 *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -117,7 +115,7 @@ h6 {
 }
 
 ._active {
-  left: 0;
+  left: 0 !important;
 }
 
 .header__about {
@@ -369,7 +367,8 @@ h6 {
     height: 100%;
     top: 0;
     left: 0;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .check-up .check-up__info_item {
     max-width: 80%;
@@ -542,4 +541,4 @@ h6 {
   .footer__widgets img {
     width: 24px;
   }
-}
+}/*# sourceMappingURL=index.css.map */
