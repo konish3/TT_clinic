@@ -118,6 +118,62 @@ h6 {
   left: 0 !important;
 }
 
+.popup-open {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+._error {
+  box-shadow: 0 0 15px red;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(69, 146, 127, 0.8980392157);
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+}
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.popup__content {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+}
+.popup__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 18px;
+}
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.popup__item_name {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.popup__item_input {
+  border: 1px solid rgba(69, 146, 127, 0.8980392157);
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 3px 15px;
+}
+
 .header__about {
   display: flex;
   align-items: center;

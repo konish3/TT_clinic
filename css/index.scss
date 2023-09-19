@@ -29,6 +29,17 @@
   left: 0 !important;
 }
 
+.popup-open {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+._error{
+  box-shadow: 0 0 15px red;
+}
+
+@import 'modal';
+
 @import 'header';
 
 @import 'main';

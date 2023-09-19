@@ -33,7 +33,7 @@
                 <p>+7(863) 000 00 00</p>
               </div>
               <p class="header__city-media">Ростов-на-Дону</p>
-              <button class="register">Записаться на прием</button>
+              <button class="register popup-link">Записаться на прием</button>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
               <li class="main__menu_item"><a href="">Цены</a></li>
               <li class="main__menu_item"><a href="">Контакты</a></li>
             </ul>
-            <button class="main__menu_button register">Записаться на прием</button>
+            <button class="main__menu_button register popup-link menu-button">Записаться на прием</button>
           </div>
         </div>
         <div class="main__block">
@@ -91,7 +91,7 @@
                     </ul>
                     <div class="check-up__info_price">Всего 2800₽<span>3500₽</span></div>
                     <div class="check-up__info_buttons">
-                      <button class="check-up__info_register register">Записаться</button>
+                      <button class="check-up__info_register register popup-link">Записаться</button>
                       <button class="check-up__info_more">Подробнее</button>
                     </div>
                   </div>
@@ -126,6 +126,24 @@
           </div>
         </div>
       </footer>
+  </div>
+  <div id="popup" class="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="" class="popup__close">X</a>
+        <form action="#" id="popup__form" class="popup__form">
+          <div class="popup__item">
+            <p class="popup__item_name">Эл. почта*</p>
+            <input class="popup__item_input _req _email" type="text">
+          </div>
+          <div class="popup__item">
+            <p class="popup__item_name">Телефон*</p>
+            <input class="popup__item_input _req " type="tel" maxlength="12">
+          </div>
+          <button class="register">Отправить</button>
+        </form>
+      </div>
+    </div>
   </div>
   <script src="index.js"></script>
 </body>
