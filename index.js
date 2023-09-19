@@ -1,32 +1,31 @@
+document.addEventListener('DOMContentLoaded', function () {
 
-
-const burger = document.querySelector('.menu__icon');
-const menuMain = document.querySelector('.main__menu');
-const menuButton = document.querySelector('.menu-button')
-if(burger) {
-  burger.addEventListener('click', function (e) {
-    console.log('1add')
-    menuMain.classList.toggle('_active');
-  })
-}
-
-const button = document.querySelectorAll('.popup-link');
-const popup = document.querySelector('.popup');
-if (button.length > 1) {
-  for (let i = 0; i < button.length; i++) {
-    const popupLink = button[i];
-    popupLink.addEventListener('click', function (e) {
-      popup.classList.add('popup-open')
+  const burger = document.querySelector('.menu__icon');
+  const menuMain = document.querySelector('.main__menu');
+  const menuButton = document.querySelector('.menu-button')
+  if(burger) {
+    burger.addEventListener('click', function (e) {
+      console.log('1add')
+      menuMain.classList.toggle('_active');
     })
   }
-}
-if (menuButton) {
-  menuButton.addEventListener('click', function (e) {
-    menuMain.classList.remove('_active')
-  })
-}
+  
+  const button = document.querySelectorAll('.popup-link');
+  const popup = document.querySelector('.popup');
+  if (button.length > 1) {
+    for (let i = 0; i < button.length; i++) {
+      const popupLink = button[i];
+      popupLink.addEventListener('click', function (e) {
+        popup.classList.add('popup-open')
+      })
+    }
+  }
+  if (menuButton) {
+    menuButton.addEventListener('click', function (e) {
+      menuMain.classList.remove('_active')
+    })
+  }
 
-document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('popup__form');
   form.addEventListener('submit', formSend);
 
@@ -37,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let formData = new FormData(form);
     
-    
     if (error === 0) {
       let response = await fetch ('mail.php', {
         method: 'POST',
@@ -47,12 +45,11 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('OK')
         form.reset();
       } else {
-        alert('Error')
+        alert('Ошибка в отправке данных.')
       }
     } else {
-      alert('Error')
+      alert('Введены неправильные данные.')
     }
-
   }
 
   function formValidate(form) {
