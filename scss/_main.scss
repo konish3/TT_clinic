@@ -44,6 +44,9 @@
   }
   .check-up {
     margin-bottom: 40px;
+    &__container {
+      
+    }
     &__body{
       display: flex;
       
@@ -125,6 +128,32 @@
     }	
 }
 
+// ----------------------Слайдер--------------------------------
+
+.slider {
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34px;
+    button {
+      background: none;
+    }
+    svg {
+      padding-top: 5px;
+    }
+    p {
+      font-size: 18px;
+      margin: 0 36px;
+      span {
+        color: #C0C0C0;
+      }
+    }
+  }
+}
+// ----------------------Адаптив--------------------------------
+
 }
 @media (min-width: 768px) {
   .main__menu {
@@ -155,7 +184,9 @@
     .check-up__info_item {
       max-width: 80%;
     }
-    
+    .check-up__info_buttons {
+      margin-bottom: 10px;
+    }
     &__img {
       position: relative;
       flex: 0 0 60.7%;

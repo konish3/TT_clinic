@@ -87,3 +87,40 @@ document.addEventListener('DOMContentLoaded', function () {
     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
   }
 })
+
+// Слайдер
+
+
+
+let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function nextSlide() {
+           showSlides(slideIndex += 1);
+        }
+
+        function previousSlide() {
+           showSlides(slideIndex -= 1);  
+        }
+
+        function currentSlide(n) {
+           showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+           let slides = document.getElementsByClassName("check-up__content");
+           const countSlide = document.querySelector('#counter-slider');
+
+            if (n > slides.length) {
+               slideIndex = 1
+            }
+            if (n < 1) {
+               slideIndex = slides.length
+            }
+  
+            for (let slide of slides) {
+               slide.style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";   
+            countSlide.innerHTML = `${slideIndex}<span>/4</span>` 
+        }
