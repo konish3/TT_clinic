@@ -1,4 +1,4 @@
-@import 'nullstyle';
+@import "nullstyle";
 
 .wrapper {
   font-size: 16px;
@@ -13,17 +13,18 @@
   max-width: 1140px;
   margin: 0 auto;
 }
-.register{
+.register {
   border-radius: 50px;
-        background: #0DBC91;
-        padding: 11px 24px;
-        color: white;
-        font-size: 14px;
-        line-height: 21px;
-        transition: background 0.4s ease;
-        &:hover{
-          background: #00D29F;
-        }
+  background: #0dbc91;
+  padding: 11px 24px;
+  color: white;
+  font-size: 14px;
+  line-height: 21px;
+  transition: background 0.4s ease;
+  &:hover {
+    background: #00d29f;
+    cursor: pointer;
+  }
 }
 ._active {
   left: 0 !important;
@@ -34,14 +35,14 @@
   visibility: visible !important;
 }
 
-._error{
+._error {
   box-shadow: 0 0 15px red;
 }
 
-@import 'modal';
+@import "modal";
 
-@import 'header';
+@import "header";
 
-@import 'main';
+@import "main";
 
-@import 'footer';
+@import "footer";
